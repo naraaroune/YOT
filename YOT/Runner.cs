@@ -51,7 +51,7 @@ namespace YOT
                 return false;
             }
         }
-        
+       
         public void StartTestRunner()
         {
         	int i = 1;
@@ -67,23 +67,22 @@ namespace YOT
 					DisplayTestSucceed(methodInfo);
 					NbSucceedTest+=1;
 				}
-				catch(Exception e)
+				catch(Exception ex)
 				{
-					DisplayTestFailed(methodInfo,e);	
+					DisplayTestFailed(methodInfo,ex);	
 					NbFailedTest+=1;
 				}
 				NbTest+=1;
 				i++;
 			}
-			//On affiche : X tests found, Y success, Z failed
-			if (NbFailedTest>0){
-				//en rouge
+			if (NbFailedTest>0)
+			{
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine("\n{0} tests found, {1} success, {2} failed",NbTest,NbSucceedTest,NbFailedTest);
 				Console.ForegroundColor = ConsoleColor.White;
 			}
-			else{
-				//en vert
+			else
+			{
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("\n{0} Tests found, {1} Succeed, {2} Failed",NbTest,NbSucceedTest,NbFailedTest);
 				Console.ForegroundColor = ConsoleColor.White;

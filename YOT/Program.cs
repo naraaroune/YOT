@@ -20,9 +20,7 @@ namespace YOT
 			var runner= new Runner(pathDll);
 			
 			runner.StartTestRunner();
-			
-			
-			
+			 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
