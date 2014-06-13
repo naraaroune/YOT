@@ -18,18 +18,6 @@ namespace YOT.Test
 	[TestFixture]
 	public class TestVerify
 	{
-		/*
-		 * 
-		 * 
-    IsTrue(sut,message="")*
-    IsFalse(sut,message="")
-    IsNull(sut,message="")
-    IsNotNull(sut,message="")
-    AreEqual(sut,expected, message="")
-
-
-
-*/
 
 		[Test]
 		public void ShouldBeTrueWithoutException()

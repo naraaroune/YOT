@@ -15,11 +15,8 @@ namespace YOT.Test
 	/// </summary>
 	public class FailedException:Exception
 	{
-		public string expected, obtained;
+		private string expected, obtained;
 			
-		public FailedException(string message) : base(message)
-		{
-		}
 		
 		public FailedException(string expected, string obtained, string message) : base(message) 
 		{

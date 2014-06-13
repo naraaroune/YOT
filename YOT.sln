@@ -1,6 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YOT", "YOT\YOT.csproj", "{51ED87DD-952A-41F1-B60F-538AA605A0E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YOT.Test", "YOT.Test\YOT.Test.csproj", "{9C942C9D-AD98-4C62-AEF4-085ED98CC976}"

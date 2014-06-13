@@ -50,19 +50,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="FailedException.cs" />
-    <Compile Include="RunnerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestVerify.cs" />
     <Compile Include="Verify.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\YOT\YOT.csproj">
-      <Project>{51ed87dd-952a-41f1-b60f-538aa605a0e4}</Project>
-      <Name>YOT</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
