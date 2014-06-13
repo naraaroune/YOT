@@ -16,9 +16,7 @@ namespace YOT
 		{
 			Console.WriteLine("Entrez le chemin d'une Dll");
 			string pathDll=Console.ReadLine();
-			//string pathh=@"c:\users\Eric nara\desktop\unitTestFrameworkSolution-master\unitTestFrameworkLibrary\bin\Debug\UnitTestFrameworkLibrary.dll";
-			//string pathhh=@"C:\Users\Eric NARA\Desktop\UnitTestFrameworkSolution-master\UnitTestFrameworkLibrary\bin\Debug";
-			//string path=@"YOT.Test.dll";
+			
 			var runner= new Runner(pathDll);
 			
 			runner.StartTestRunner();
