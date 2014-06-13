@@ -9,9 +9,10 @@ namespace YOT.Test
         private Runner runner= new Runner();
 
         [Test]
-        public void Should_Load_Assembly() {
+        public void Should_Load_Assembly() 
+        {
             Assert.IsTrue(runner.LoadDll("YOT.dll"));
-            Assert.IsFalse(runner.LoadDll("YOTFAIL.dll"));
+            Assert.IsFalse(runner.LoadDll("STRING.dll"));
         }
 
     }
