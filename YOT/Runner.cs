@@ -39,6 +39,11 @@ namespace YOT
 		{
             try 
 			{
+                if (String.IsNullOrEmpty(pathDll))
+                {
+                    Console.WriteLine("Veuillez entrer un chemin valide ");
+                    return false;
+                }
                 if (!File.Exists(pathDll) || pathDll == null) 
                     return false;
 
@@ -52,8 +57,9 @@ namespace YOT
             }
         }
        
-        public void StartTestRunner()
+        public void StartTestRunner(string pathDll)
         {
+
         	int i = 1;
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.Write("START RUNNER TEST");

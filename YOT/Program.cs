@@ -14,12 +14,12 @@ namespace YOT
 	{
 		public static void Main(string[] args)
 		{
-			//Console.WriteLine("Entrez le chemin d'une Dll");
-			//string pathDll=Console.ReadLine();
-
-            var runner = new Runner(@"C:\Users\Rectorat\Documents\GitHub\YOT\YOT\bin\Debug\YOT.Test.dll");
+			Console.WriteLine("Entrez le chemin d'une Dll");
+			string pathDll=Console.ReadLine();
 			
-			runner.StartTestRunner();
+			var runner= new Runner(pathDll);
+			
+			runner.StartTestRunner(pathDll);
 			 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
